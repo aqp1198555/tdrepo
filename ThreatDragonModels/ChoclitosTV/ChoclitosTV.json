@@ -80,7 +80,9 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "d992ac48-2373-4fd4-9ef2-cc8a68a2af48"
+                "d992ac48-2373-4fd4-9ef2-cc8a68a2af48",
+                "107973f1-b817-412b-82ef-fdbbe0de7bf2",
+                "cee65ff0-a48d-4b8c-ba79-1285dc60888c"
               ],
               "containedElements": [
                 "583f9029-979f-47b8-b5c8-cba0ed3e2acd",
@@ -115,7 +117,10 @@
               "description": "Almacenamiento y persistencia",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "107973f1-b817-412b-82ef-fdbbe0de7bf2",
+                "cee65ff0-a48d-4b8c-ba79-1285dc60888c"
+              ],
               "containedElements": [
                 "cea63e22-2278-4206-abd7-e3fdfb28130e",
                 "14c94b0b-fdeb-4acf-ab39-c85fd0b30bfb",
@@ -834,8 +839,8 @@
             },
             "vertices": [
               {
-                "x": 30,
-                "y": 235
+                "x": 153.75,
+                "y": 210
               }
             ]
           },
@@ -1050,9 +1055,171 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Validar login",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Validar login"
+            ],
+            "id": "48fdf312-e791-4a82-94ab-70d570df4158",
+            "source": {
+              "cell": "583f9029-979f-47b8-b5c8-cba0ed3e2acd",
+              "port": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+            },
+            "target": {
+              "cell": "35bae4d0-7dd8-42d3-997b-b22f3cc0f037",
+              "port": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+            },
+            "vertices": [
+              {
+                "x": 70,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Consultar usuario",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51",
+                "5d2e80f2-f5c8-4509-9bfe-57252f3b751e"
+              ]
+            },
+            "labels": [
+              "Consultar usuario"
+            ],
+            "id": "107973f1-b817-412b-82ef-fdbbe0de7bf2",
+            "source": {
+              "cell": "35bae4d0-7dd8-42d3-997b-b22f3cc0f037",
+              "port": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+            },
+            "target": {
+              "cell": "cea63e22-2278-4206-abd7-e3fdfb28130e",
+              "port": "21a34141-0c20-4492-8471-b02429ba0377"
+            },
+            "vertices": [
+              {
+                "x": 70,
+                "y": 520
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Devuelve usuario",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51",
+                "5d2e80f2-f5c8-4509-9bfe-57252f3b751e"
+              ]
+            },
+            "labels": [
+              "Devuelve usuario"
+            ],
+            "id": "cee65ff0-a48d-4b8c-ba79-1285dc60888c",
+            "source": {
+              "cell": "cea63e22-2278-4206-abd7-e3fdfb28130e",
+              "port": "f97b0931-92bc-45e1-928d-3f50524232c5"
+            },
+            "target": {
+              "cell": "35bae4d0-7dd8-42d3-997b-b22f3cc0f037",
+              "port": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+            },
+            "vertices": [
+              {
+                "x": 20,
+                "y": 620
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 370,
-              "y": 190.0000000000002
+              "x": 381.25,
+              "y": 230.00000000000023
             },
             "size": {
               "width": 100,
@@ -1180,7 +1347,7 @@
             },
             "attrs": {
               "text": {
-                "text": "P8 Auth ser"
+                "text": "P8 Auth se"
               },
               "body": {
                 "stroke": "#333333",
@@ -1291,7 +1458,7 @@
           },
           {
             "position": {
-              "x": 360,
+              "x": 263.75,
               "y": 345
             },
             "size": {
@@ -1531,7 +1698,7 @@
           },
           {
             "position": {
-              "x": 699.9999999999991,
+              "x": 746,
               "y": 345
             },
             "size": {
@@ -1768,8 +1935,8 @@
           },
           {
             "position": {
-              "x": 69.99999999999989,
-              "y": 565
+              "x": 33.75,
+              "y": 595
             },
             "size": {
               "width": 120,
@@ -1892,8 +2059,8 @@
           },
           {
             "position": {
-              "x": 240,
-              "y": 565
+              "x": 224.9999999999999,
+              "y": 595
             },
             "size": {
               "width": 120,
