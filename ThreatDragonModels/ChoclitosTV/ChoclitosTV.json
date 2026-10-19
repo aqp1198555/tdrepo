@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 69.99999999999989,
-              "y": -263.00000000000057
+              "x": 31.99999999999926,
+              "y": -258
             },
             "size": {
               "width": 540,
@@ -45,7 +45,7 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "d992ac48-2373-4fd4-9ef2-cc8a68a2af48",
-                "87b43106-817b-49eb-978d-e46111ba1b2d"
+                "c9f2e8e4-259f-4027-ba68-3872ea2c570a"
               ],
               "containedElements": [
                 "b6ec32c0-c072-46c9-bf3d-bf1895a5e402",
@@ -804,53 +804,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              ""
-            ],
-            "id": "8644a935-d1da-4c35-83fe-2aef8bfbff80",
-            "source": {
-              "cell": "b6ec32c0-c072-46c9-bf3d-bf1895a5e402",
-              "port": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
-            },
-            "target": {
-              "cell": "ab0bd065-82df-4ec1-ae00-bb0cd635fa60",
-              "port": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -906,7 +859,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "",
+              "name": "Credenciales",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -922,9 +875,9 @@
               ]
             },
             "labels": [
-              ""
+              "Credenciales"
             ],
-            "id": "87b43106-817b-49eb-978d-e46111ba1b2d",
+            "id": "c9f2e8e4-259f-4027-ba68-3872ea2c570a",
             "source": {
               "cell": "77f4d8d5-1128-471f-a8ab-3dfbdc3493f1",
               "port": "9635f009-a81c-46e4-8b3c-158e955c6bd0"
@@ -935,8 +888,8 @@
             },
             "vertices": [
               {
-                "x": 319.75,
-                "y": -270
+                "x": 260,
+                "y": -280
               }
             ]
           },
@@ -960,7 +913,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "",
+              "name": "Credenciales\n",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -974,9 +927,61 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              ""
+              "Credenciales\n"
             ],
-            "id": "c59406e3-0685-4387-9d92-3435d3c29b4d",
+            "id": "29651ac7-c04c-4c22-848f-2356f751ddf8",
+            "source": {
+              "cell": "b6ec32c0-c072-46c9-bf3d-bf1895a5e402",
+              "port": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+            },
+            "target": {
+              "cell": "ab0bd065-82df-4ec1-ae00-bb0cd635fa60",
+              "port": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+            },
+            "vertices": [
+              {
+                "x": 250,
+                "y": -120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Login request"
+            ],
+            "id": "521f1af4-5ac4-4457-9249-9685f87f6ccd",
             "source": {
               "cell": "ab0bd065-82df-4ec1-ae00-bb0cd635fa60",
               "port": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
@@ -987,8 +992,8 @@
             },
             "vertices": [
               {
-                "x": 210,
-                "y": -20
+                "x": 153.75,
+                "y": 10
               }
             ]
           },
@@ -1012,7 +1017,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "",
+              "name": "Login request",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1026,9 +1031,9 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              ""
+              "Login request"
             ],
-            "id": "ab888561-f830-4e94-84cf-9921b85fb8aa",
+            "id": "4e95ae6a-1b90-4d02-b0f1-b8439b2c7cf1",
             "source": {
               "cell": "ab0bd065-82df-4ec1-ae00-bb0cd635fa60",
               "port": "7b52219e-7c70-448f-89ec-a1e19fed386f"
@@ -1039,8 +1044,8 @@
             },
             "vertices": [
               {
-                "x": 430,
-                "y": -20
+                "x": 486.25,
+                "y": 10
               }
             ]
           },
@@ -1175,7 +1180,7 @@
             },
             "attrs": {
               "text": {
-                "text": "P8 Auth Service"
+                "text": "P8 Auth ser"
               },
               "body": {
                 "stroke": "#333333",
@@ -3090,6 +3095,123 @@
               "threats": []
             },
             "zIndex": 29
+          },
+          {
+            "position": {
+              "x": 234,
+              "y": 994
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Administradores"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9a7ebfb2-78ab-49b3-9658-f48dad1f3367"
+                },
+                {
+                  "group": "right",
+                  "id": "728c57db-96e1-4c16-87f7-f453190361d3"
+                },
+                {
+                  "group": "bottom",
+                  "id": "9635f009-a81c-46e4-8b3c-158e955c6bd0"
+                },
+                {
+                  "group": "left",
+                  "id": "56910bb8-a16d-4f5d-9d80-356779baf217"
+                }
+              ]
+            },
+            "id": "06c1583f-2c7d-45b5-9da1-a094bd612cc4",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Administradores",
+              "description": "Equipo TI",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "zIndex": 30
           }
         ],
         "description": "DFD Choclitos TV"
