@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 31.99999999999926,
-              "y": -258
+              "x": 69.99999999999989,
+              "y": -263.00000000000057
             },
             "size": {
               "width": 540,
@@ -44,7 +44,8 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "d992ac48-2373-4fd4-9ef2-cc8a68a2af48"
+                "d992ac48-2373-4fd4-9ef2-cc8a68a2af48",
+                "87b43106-817b-49eb-978d-e46111ba1b2d"
               ],
               "containedElements": [
                 "b6ec32c0-c072-46c9-bf3d-bf1895a5e402",
@@ -84,7 +85,6 @@
               "containedElements": [
                 "583f9029-979f-47b8-b5c8-cba0ed3e2acd",
                 "35bae4d0-7dd8-42d3-997b-b22f3cc0f037",
-                "79ee7afe-e925-4af7-9c5b-dedc7ff7b1ae",
                 "e893d6f5-1687-4986-819f-8547de668449",
                 "26290085-391f-448d-83d1-baf4fcda61d0",
                 "c6d178b0-3537-4c61-9df0-7463da09d1bc"
@@ -887,6 +887,164 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "44cdc5e2-536a-4eba-99fe-4e9a22fc25b7"
+              ]
+            },
+            "labels": [
+              ""
+            ],
+            "id": "87b43106-817b-49eb-978d-e46111ba1b2d",
+            "source": {
+              "cell": "77f4d8d5-1128-471f-a8ab-3dfbdc3493f1",
+              "port": "9635f009-a81c-46e4-8b3c-158e955c6bd0"
+            },
+            "target": {
+              "cell": "b6ec32c0-c072-46c9-bf3d-bf1895a5e402",
+              "port": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+            },
+            "vertices": [
+              {
+                "x": 319.75,
+                "y": -270
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "c59406e3-0685-4387-9d92-3435d3c29b4d",
+            "source": {
+              "cell": "ab0bd065-82df-4ec1-ae00-bb0cd635fa60",
+              "port": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+            },
+            "target": {
+              "cell": "d4d9b120-ac29-46dd-a2a4-4480968121d2",
+              "port": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+            },
+            "vertices": [
+              {
+                "x": 210,
+                "y": -20
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "ab888561-f830-4e94-84cf-9921b85fb8aa",
+            "source": {
+              "cell": "ab0bd065-82df-4ec1-ae00-bb0cd635fa60",
+              "port": "7b52219e-7c70-448f-89ec-a1e19fed386f"
+            },
+            "target": {
+              "cell": "bc385cbc-96b2-445d-b7b3-64e528729ee7",
+              "port": "7b52219e-7c70-448f-89ec-a1e19fed386f"
+            },
+            "vertices": [
+              {
+                "x": 430,
+                "y": -20
+              }
+            ]
+          },
+          {
             "position": {
               "x": 370,
               "y": 190.0000000000002
@@ -1115,126 +1273,6 @@
               "type": "tm.Process",
               "name": "P8 Auth Service",
               "description": "Autenticación y autorización",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 230,
-              "y": 345
-            },
-            "size": {
-              "width": 90,
-              "height": 90
-            },
-            "attrs": {
-              "text": {
-                "text": "P9 User Service"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
-                },
-                {
-                  "group": "right",
-                  "id": "7b52219e-7c70-448f-89ec-a1e19fed386f"
-                },
-                {
-                  "group": "bottom",
-                  "id": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
-                },
-                {
-                  "group": "left",
-                  "id": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
-                }
-              ]
-            },
-            "id": "79ee7afe-e925-4af7-9c5b-dedc7ff7b1ae",
-            "zIndex": 13,
-            "data": {
-              "type": "tm.Process",
-              "name": "P9 User Service",
-              "description": "Gestión de usuarios",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
