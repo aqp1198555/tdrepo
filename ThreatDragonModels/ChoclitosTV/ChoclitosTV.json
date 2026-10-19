@@ -83,8 +83,40 @@
               ],
               "containedElements": [
                 "583f9029-979f-47b8-b5c8-cba0ed3e2acd",
-                "35bae4d0-7dd8-42d3-997b-b22f3cc0f037"
+                "35bae4d0-7dd8-42d3-997b-b22f3cc0f037",
+                "79ee7afe-e925-4af7-9c5b-dedc7ff7b1ae",
+                "e893d6f5-1687-4986-819f-8547de668449",
+                "26290085-391f-448d-83d1-baf4fcda61d0",
+                "c6d178b0-3537-4c61-9df0-7463da09d1bc"
               ]
+            }
+          },
+          {
+            "position": {
+              "x": 16.99999999999926,
+              "y": 494.0000000000051
+            },
+            "size": {
+              "width": 900,
+              "height": 230
+            },
+            "attrs": {
+              "label": {
+                "text": "Datos"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "5d2e80f2-f5c8-4509-9bfe-57252f3b751e",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Datos",
+              "description": "Almacenamiento y persistencia",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
             }
           },
           {
@@ -1021,7 +1053,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Process"
+                "text": "P8 Auth Service"
               },
               "body": {
                 "stroke": "#333333",
@@ -1117,7 +1149,247 @@
             "zIndex": 12,
             "data": {
               "type": "tm.Process",
-              "name": "Process",
+              "name": "P8 Auth Service",
+              "description": "Autenticación y autorización",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 203.75,
+              "y": 345
+            },
+            "size": {
+              "width": 140,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "P9 User Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+                },
+                {
+                  "group": "right",
+                  "id": "7b52219e-7c70-448f-89ec-a1e19fed386f"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+                },
+                {
+                  "group": "left",
+                  "id": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+                }
+              ]
+            },
+            "id": "79ee7afe-e925-4af7-9c5b-dedc7ff7b1ae",
+            "zIndex": 13,
+            "data": {
+              "type": "tm.Process",
+              "name": "P9 User Service",
+              "description": "Gestión de usuarios",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 360,
+              "y": 345
+            },
+            "size": {
+              "width": 120,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "P10 Streaming Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+                },
+                {
+                  "group": "right",
+                  "id": "7b52219e-7c70-448f-89ec-a1e19fed386f"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+                },
+                {
+                  "group": "left",
+                  "id": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+                }
+              ]
+            },
+            "id": "e893d6f5-1687-4986-819f-8547de668449",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Process",
+              "name": "P10 Streaming Service",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1128,13 +1400,363 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 536,
+              "y": 345
             },
-            "tools": {
+            "size": {
+              "width": 100,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "P11 Subscription Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
               "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
+                {
+                  "group": "top",
+                  "id": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+                },
+                {
+                  "group": "right",
+                  "id": "7b52219e-7c70-448f-89ec-a1e19fed386f"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+                },
+                {
+                  "group": "left",
+                  "id": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+                }
+              ]
+            },
+            "id": "26290085-391f-448d-83d1-baf4fcda61d0",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Process",
+              "name": "P11 Subscription Service",
+              "description": "Suscripciones y facturación",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 699.9999999999991,
+              "y": 345
+            },
+            "size": {
+              "width": 110,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "P12 Catalog Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+                },
+                {
+                  "group": "right",
+                  "id": "7b52219e-7c70-448f-89ec-a1e19fed386f"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+                },
+                {
+                  "group": "left",
+                  "id": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+                }
+              ]
+            },
+            "id": "c6d178b0-3537-4c61-9df0-7463da09d1bc",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Process",
+              "name": "P12 Catalog Service",
+              "description": "Catálogo multimedia",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 913,
+              "y": 205
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Helpdesk / Customer Support Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9a7ebfb2-78ab-49b3-9658-f48dad1f3367"
+                },
+                {
+                  "group": "right",
+                  "id": "728c57db-96e1-4c16-87f7-f453190361d3"
+                },
+                {
+                  "group": "bottom",
+                  "id": "9635f009-a81c-46e4-8b3c-158e955c6bd0"
+                },
+                {
+                  "group": "left",
+                  "id": "56910bb8-a16d-4f5d-9d80-356779baf217"
+                }
+              ]
+            },
+            "id": "d67b6b79-f123-416e-962c-09e2a8d7caf0",
+            "zIndex": 17,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Helpdesk / Customer Support Service",
+              "description": "Equipo de soporte y Atención al cliente",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
             }
           }
         ],
