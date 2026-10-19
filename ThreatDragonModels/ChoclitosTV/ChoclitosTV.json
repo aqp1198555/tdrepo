@@ -21,7 +21,7 @@
         "cells": [
           {
             "position": {
-              "x": 31.99999999999926,
+              "x": 32.99999999999994,
               "y": -258
             },
             "size": {
@@ -45,7 +45,9 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "d992ac48-2373-4fd4-9ef2-cc8a68a2af48",
-                "c9f2e8e4-259f-4027-ba68-3872ea2c570a"
+                "c9f2e8e4-259f-4027-ba68-3872ea2c570a",
+                "a7cddf35-83af-47f5-8a14-482568222e4f",
+                "ea61be04-e65c-4114-9bd9-7356d7f3fb08"
               ],
               "containedElements": [
                 "b6ec32c0-c072-46c9-bf3d-bf1895a5e402",
@@ -57,12 +59,12 @@
           },
           {
             "position": {
-              "x": 31.99999999999926,
-              "y": 174.00000000000244
+              "x": 32.99999999999994,
+              "y": 168.99999999999932
             },
             "size": {
-              "width": 870,
-              "height": 300
+              "width": 880,
+              "height": 250
             },
             "attrs": {
               "label": {
@@ -81,15 +83,12 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "d992ac48-2373-4fd4-9ef2-cc8a68a2af48",
-                "107973f1-b817-412b-82ef-fdbbe0de7bf2",
-                "cee65ff0-a48d-4b8c-ba79-1285dc60888c"
+                "48fdf312-e791-4a82-94ab-70d570df4158",
+                "9ddfa08d-e824-439f-850c-c7e69609a133",
+                "a7cddf35-83af-47f5-8a14-482568222e4f"
               ],
               "containedElements": [
-                "583f9029-979f-47b8-b5c8-cba0ed3e2acd",
-                "35bae4d0-7dd8-42d3-997b-b22f3cc0f037",
-                "e893d6f5-1687-4986-819f-8547de668449",
-                "26290085-391f-448d-83d1-baf4fcda61d0",
-                "c6d178b0-3537-4c61-9df0-7463da09d1bc"
+                "583f9029-979f-47b8-b5c8-cba0ed3e2acd"
               ]
             }
           },
@@ -119,7 +118,9 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "107973f1-b817-412b-82ef-fdbbe0de7bf2",
-                "cee65ff0-a48d-4b8c-ba79-1285dc60888c"
+                "cee65ff0-a48d-4b8c-ba79-1285dc60888c",
+                "09ad38b1-9e1b-4646-923a-bc47c11a346d",
+                "b7416512-751e-426c-82f2-a9dd484ac5a0"
               ],
               "containedElements": [
                 "cea63e22-2278-4206-abd7-e3fdfb28130e",
@@ -551,8 +552,8 @@
           },
           {
             "position": {
-              "x": 153.75,
-              "y": 39.000000000000085
+              "x": 204.9999999999999,
+              "y": 29.000000000000085
             },
             "size": {
               "width": 110,
@@ -671,8 +672,8 @@
           },
           {
             "position": {
-              "x": 376.25,
-              "y": 39.000000000000085
+              "x": 346.5,
+              "y": 29.000000000000085
             },
             "size": {
               "width": 110,
@@ -1085,7 +1086,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51"
+              ]
             },
             "labels": [
               "Validar login"
@@ -1138,7 +1141,6 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51",
                 "5d2e80f2-f5c8-4509-9bfe-57252f3b751e"
               ]
             },
@@ -1193,7 +1195,6 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51",
                 "5d2e80f2-f5c8-4509-9bfe-57252f3b751e"
               ]
             },
@@ -1213,6 +1214,371 @@
               {
                 "x": 20,
                 "y": 620
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Refrescar Token",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "5d2e80f2-f5c8-4509-9bfe-57252f3b751e"
+              ]
+            },
+            "labels": [
+              "Refrescar Token"
+            ],
+            "id": "09ad38b1-9e1b-4646-923a-bc47c11a346d",
+            "source": {
+              "cell": "35bae4d0-7dd8-42d3-997b-b22f3cc0f037",
+              "port": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+            },
+            "target": {
+              "cell": "14c94b0b-fdeb-4acf-ab39-c85fd0b30bfb",
+              "port": "21a34141-0c20-4492-8471-b02429ba0377"
+            },
+            "vertices": [
+              {
+                "x": 170,
+                "y": 625
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Confirmación Token",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "5d2e80f2-f5c8-4509-9bfe-57252f3b751e"
+              ]
+            },
+            "labels": [
+              "Confirmación Token"
+            ],
+            "id": "b7416512-751e-426c-82f2-a9dd484ac5a0",
+            "source": {
+              "cell": "14c94b0b-fdeb-4acf-ab39-c85fd0b30bfb",
+              "port": "21a34141-0c20-4492-8471-b02429ba0377"
+            },
+            "target": {
+              "cell": "35bae4d0-7dd8-42d3-997b-b22f3cc0f037",
+              "port": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+            },
+            "vertices": [
+              {
+                "x": 225,
+                "y": 600
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Token JWT",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51"
+              ]
+            },
+            "labels": [
+              "Token JWT"
+            ],
+            "id": "9ddfa08d-e824-439f-850c-c7e69609a133",
+            "source": {
+              "cell": "35bae4d0-7dd8-42d3-997b-b22f3cc0f037",
+              "port": "7b52219e-7c70-448f-89ec-a1e19fed386f"
+            },
+            "target": {
+              "cell": "583f9029-979f-47b8-b5c8-cba0ed3e2acd",
+              "port": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Token JWT",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "44cdc5e2-536a-4eba-99fe-4e9a22fc25b7",
+                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51"
+              ]
+            },
+            "labels": [
+              "Token JWT"
+            ],
+            "id": "a7cddf35-83af-47f5-8a14-482568222e4f",
+            "source": {
+              "cell": "583f9029-979f-47b8-b5c8-cba0ed3e2acd",
+              "port": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+            },
+            "target": {
+              "cell": "d4d9b120-ac29-46dd-a2a4-4480968121d2",
+              "port": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+            },
+            "vertices": [
+              {
+                "x": 380,
+                "y": 139
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Token JWT",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Token JWT"
+            ],
+            "id": "d2a5a048-c17a-4974-b6b7-e7d26eaab6aa",
+            "source": {
+              "cell": "d4d9b120-ac29-46dd-a2a4-4480968121d2",
+              "port": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+            },
+            "target": {
+              "cell": "ab0bd065-82df-4ec1-ae00-bb0cd635fa60",
+              "port": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Token JWT",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Token JWT"
+            ],
+            "id": "05cc4189-01b9-4118-a08a-d10abc565fa8",
+            "source": {
+              "cell": "ab0bd065-82df-4ec1-ae00-bb0cd635fa60",
+              "port": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+            },
+            "target": {
+              "cell": "b6ec32c0-c072-46c9-bf3d-bf1895a5e402",
+              "port": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+            },
+            "vertices": [
+              {
+                "x": 400,
+                "y": -120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Token JWT",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "44cdc5e2-536a-4eba-99fe-4e9a22fc25b7"
+              ]
+            },
+            "labels": [
+              "Token JWT"
+            ],
+            "id": "ea61be04-e65c-4114-9bd9-7356d7f3fb08",
+            "source": {
+              "cell": "b6ec32c0-c072-46c9-bf3d-bf1895a5e402",
+              "port": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+            },
+            "target": {
+              "cell": "77f4d8d5-1128-471f-a8ab-3dfbdc3493f1",
+              "port": "9635f009-a81c-46e4-8b3c-158e955c6bd0"
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": -280
               }
             ]
           },
@@ -1347,7 +1713,7 @@
             },
             "attrs": {
               "text": {
-                "text": "P8 Auth se"
+                "text": "P8 Au"
               },
               "body": {
                 "stroke": "#333333",
