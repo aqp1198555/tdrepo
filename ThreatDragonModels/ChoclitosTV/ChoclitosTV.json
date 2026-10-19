@@ -126,12 +126,12 @@
           },
           {
             "position": {
-              "x": 16.999999999998238,
+              "x": 153.75,
               "y": 697.0000000000019
             },
             "size": {
-              "width": 900,
-              "height": 230
+              "width": 590,
+              "height": 190
             },
             "attrs": {
               "label": {
@@ -150,7 +150,9 @@
               "hasOpenThreats": false,
               "crossingFlows": [],
               "containedElements": [
-                "8233da15-c75d-4fb6-afb3-fdea773e4f04"
+                "fbb592ac-defc-4358-9710-dbe1d4ebf964",
+                "96402bdb-cd83-42a9-8dd5-00347fda35da",
+                "7be0d49e-b8b5-4cde-8012-8e6ca2c6e8c7"
               ]
             }
           },
@@ -1230,12 +1232,12 @@
           },
           {
             "position": {
-              "x": 292,
-              "y": 360
+              "x": 230,
+              "y": 345
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 90,
+              "height": 90
             },
             "attrs": {
               "text": {
@@ -2563,16 +2565,16 @@
           },
           {
             "position": {
-              "x": 70,
-              "y": 782
+              "x": 224.9999999999999,
+              "y": 747.0000000000019
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 90,
+              "height": 90
             },
             "attrs": {
               "text": {
-                "text": "Process"
+                "text": "P13 Consola de Administración"
               },
               "body": {
                 "stroke": "#333333",
@@ -2664,12 +2666,11 @@
                 }
               ]
             },
-            "id": "8233da15-c75d-4fb6-afb3-fdea773e4f04",
-            "zIndex": 25,
+            "id": "fbb592ac-defc-4358-9710-dbe1d4ebf964",
             "data": {
               "type": "tm.Process",
-              "name": "Process",
-              "description": "",
+              "name": "P13 Consola de Administración",
+              "description": "Gestión de la Infraestructura",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -2680,13 +2681,481 @@
               "privilegeLevel": "",
               "threats": []
             },
-            "tools": {
+            "zIndex": 25
+          },
+          {
+            "position": {
+              "x": 426.25,
+              "y": 747.0000000000019
+            },
+            "size": {
+              "width": 90,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "P14 Monitorización y logs"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
               "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
+                {
+                  "group": "top",
+                  "id": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+                },
+                {
+                  "group": "right",
+                  "id": "7b52219e-7c70-448f-89ec-a1e19fed386f"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+                },
+                {
+                  "group": "left",
+                  "id": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+                }
+              ]
+            },
+            "id": "96402bdb-cd83-42a9-8dd5-00347fda35da",
+            "data": {
+              "type": "tm.Process",
+              "name": "P14 Monitorización y logs",
+              "description": "Prometheus / Grafana / ELK",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 26
+          },
+          {
+            "position": {
+              "x": 586,
+              "y": 747.0000000000019
+            },
+            "size": {
+              "width": 90,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "P15 CI /CD"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+                },
+                {
+                  "group": "right",
+                  "id": "7b52219e-7c70-448f-89ec-a1e19fed386f"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+                },
+                {
+                  "group": "left",
+                  "id": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+                }
+              ]
+            },
+            "id": "7be0d49e-b8b5-4cde-8012-8e6ca2c6e8c7",
+            "data": {
+              "type": "tm.Process",
+              "name": "P15 CI /CD",
+              "description": "Repositorio de código",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 27
+          },
+          {
+            "position": {
+              "x": 170,
+              "y": 930
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Administradores"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9a7ebfb2-78ab-49b3-9658-f48dad1f3367"
+                },
+                {
+                  "group": "right",
+                  "id": "728c57db-96e1-4c16-87f7-f453190361d3"
+                },
+                {
+                  "group": "bottom",
+                  "id": "9635f009-a81c-46e4-8b3c-158e955c6bd0"
+                },
+                {
+                  "group": "left",
+                  "id": "56910bb8-a16d-4f5d-9d80-356779baf217"
+                }
+              ]
+            },
+            "id": "24a1dc7c-2c0b-45ed-83ce-62f99977e52e",
+            "zIndex": 28,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Administradores",
+              "description": "Equipo TI",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 486.25,
+              "y": 930
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Desarrolladores"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9a7ebfb2-78ab-49b3-9658-f48dad1f3367"
+                },
+                {
+                  "group": "right",
+                  "id": "728c57db-96e1-4c16-87f7-f453190361d3"
+                },
+                {
+                  "group": "bottom",
+                  "id": "9635f009-a81c-46e4-8b3c-158e955c6bd0"
+                },
+                {
+                  "group": "left",
+                  "id": "56910bb8-a16d-4f5d-9d80-356779baf217"
+                }
+              ]
+            },
+            "id": "089ab627-7248-4ac7-a1f6-346179e7d8e2",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Desarrolladores",
+              "description": "DevOps",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "zIndex": 29
           }
         ],
         "description": "DFD Choclitos TV"
