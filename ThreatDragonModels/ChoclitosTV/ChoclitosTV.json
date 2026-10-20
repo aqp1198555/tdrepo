@@ -22,7 +22,7 @@
           {
             "position": {
               "x": 32.99999999999994,
-              "y": -258
+              "y": -251.00000000000068
             },
             "size": {
               "width": 540,
@@ -44,10 +44,10 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "d992ac48-2373-4fd4-9ef2-cc8a68a2af48",
                 "a7cddf35-83af-47f5-8a14-482568222e4f",
                 "ea61be04-e65c-4114-9bd9-7356d7f3fb08",
-                "5159f910-2303-4672-b1f0-7bc85e360735"
+                "5159f910-2303-4672-b1f0-7bc85e360735",
+                "ea32a3ed-7f52-4e79-95f5-841db41e6b1f"
               ],
               "containedElements": [
                 "b6ec32c0-c072-46c9-bf3d-bf1895a5e402",
@@ -64,7 +64,7 @@
             },
             "size": {
               "width": 880,
-              "height": 250
+              "height": 300
             },
             "attrs": {
               "label": {
@@ -82,20 +82,29 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "d992ac48-2373-4fd4-9ef2-cc8a68a2af48",
-                "48fdf312-e791-4a82-94ab-70d570df4158",
-                "9ddfa08d-e824-439f-850c-c7e69609a133",
-                "a7cddf35-83af-47f5-8a14-482568222e4f"
+                "107973f1-b817-412b-82ef-fdbbe0de7bf2",
+                "cee65ff0-a48d-4b8c-ba79-1285dc60888c",
+                "09ad38b1-9e1b-4646-923a-bc47c11a346d",
+                "b7416512-751e-426c-82f2-a9dd484ac5a0",
+                "a7cddf35-83af-47f5-8a14-482568222e4f",
+                "ea32a3ed-7f52-4e79-95f5-841db41e6b1f",
+                "9df4c2fe-0bf0-4bba-9298-1c31db8609f1",
+                "72a6e442-8c5f-4e8a-b9d7-0dd749679097"
               ],
               "containedElements": [
-                "583f9029-979f-47b8-b5c8-cba0ed3e2acd"
+                "583f9029-979f-47b8-b5c8-cba0ed3e2acd",
+                "35bae4d0-7dd8-42d3-997b-b22f3cc0f037",
+                "e893d6f5-1687-4986-819f-8547de668449",
+                "26290085-391f-448d-83d1-baf4fcda61d0",
+                "c6d178b0-3537-4c61-9df0-7463da09d1bc",
+                "1535c70b-a062-4ca0-bdf9-3b08215badfd"
               ]
             }
           },
           {
             "position": {
               "x": -1.25,
-              "y": 475
+              "y": 468.9999999999993
             },
             "size": {
               "width": 900,
@@ -120,7 +129,9 @@
                 "107973f1-b817-412b-82ef-fdbbe0de7bf2",
                 "cee65ff0-a48d-4b8c-ba79-1285dc60888c",
                 "09ad38b1-9e1b-4646-923a-bc47c11a346d",
-                "b7416512-751e-426c-82f2-a9dd484ac5a0"
+                "b7416512-751e-426c-82f2-a9dd484ac5a0",
+                "9df4c2fe-0bf0-4bba-9298-1c31db8609f1",
+                "72a6e442-8c5f-4e8a-b9d7-0dd749679097"
               ],
               "containedElements": [
                 "cea63e22-2278-4206-abd7-e3fdfb28130e",
@@ -672,7 +683,7 @@
           },
           {
             "position": {
-              "x": 346.5,
+              "x": 336.5,
               "y": 29.000000000000085
             },
             "size": {
@@ -810,62 +821,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "44cdc5e2-536a-4eba-99fe-4e9a22fc25b7",
-                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51"
-              ]
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "d992ac48-2373-4fd4-9ef2-cc8a68a2af48",
-            "source": {
-              "cell": "d4d9b120-ac29-46dd-a2a4-4480968121d2",
-              "port": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
-            },
-            "target": {
-              "cell": "583f9029-979f-47b8-b5c8-cba0ed3e2acd",
-              "port": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
-            },
-            "vertices": [
-              {
-                "x": 153.75,
-                "y": 210
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Credenciales\n",
+              "name": "Credenciales / Peticiones\n",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -879,7 +835,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Credenciales\n"
+              "Credenciales / Peticiones\n"
             ],
             "id": "29651ac7-c04c-4c22-848f-2356f751ddf8",
             "source": {
@@ -892,7 +848,7 @@
             },
             "vertices": [
               {
-                "x": 250,
+                "x": 180,
                 "y": -120
               }
             ]
@@ -917,7 +873,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Login request",
+              "name": "Login request / Petición servicio",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -931,7 +887,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Login request"
+              "Login request / Petición servicio"
             ],
             "id": "521f1af4-5ac4-4457-9249-9685f87f6ccd",
             "source": {
@@ -944,8 +900,16 @@
             },
             "vertices": [
               {
-                "x": 153.75,
-                "y": 10
+                "x": 170,
+                "y": -48
+              },
+              {
+                "x": 120,
+                "y": -10
+              },
+              {
+                "x": 160,
+                "y": 50
               }
             ]
           },
@@ -980,9 +944,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Validar login"
@@ -1035,6 +997,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
+                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51",
                 "5d2e80f2-f5c8-4509-9bfe-57252f3b751e"
               ]
             },
@@ -1089,6 +1052,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
+                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51",
                 "5d2e80f2-f5c8-4509-9bfe-57252f3b751e"
               ]
             },
@@ -1143,6 +1107,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
+                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51",
                 "5d2e80f2-f5c8-4509-9bfe-57252f3b751e"
               ]
             },
@@ -1160,8 +1125,8 @@
             },
             "vertices": [
               {
-                "x": 170,
-                "y": 625
+                "x": 200,
+                "y": 605
               }
             ]
           },
@@ -1197,6 +1162,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
+                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51",
                 "5d2e80f2-f5c8-4509-9bfe-57252f3b751e"
               ]
             },
@@ -1215,7 +1181,7 @@
             "vertices": [
               {
                 "x": 225,
-                "y": 600
+                "y": 570
               }
             ]
           },
@@ -1250,9 +1216,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Token JWT"
@@ -1527,6 +1491,274 @@
               {
                 "x": 50,
                 "y": -310
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login request / Petición servicios",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "44cdc5e2-536a-4eba-99fe-4e9a22fc25b7",
+                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51"
+              ]
+            },
+            "labels": [
+              "Login request / Petición servicios"
+            ],
+            "id": "ea32a3ed-7f52-4e79-95f5-841db41e6b1f",
+            "source": {
+              "cell": "d4d9b120-ac29-46dd-a2a4-4480968121d2",
+              "port": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+            },
+            "target": {
+              "cell": "583f9029-979f-47b8-b5c8-cba0ed3e2acd",
+              "port": "7b9208e6-85e8-4add-92d6-6c937c5c6cf6"
+            },
+            "vertices": [
+              {
+                "x": 100,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Obtener catálogo",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Obtener catálogo"
+            ],
+            "id": "7255cd3a-98ff-4590-9b96-2ad4c2b8bec9",
+            "source": {
+              "cell": "583f9029-979f-47b8-b5c8-cba0ed3e2acd",
+              "port": "7b52219e-7c70-448f-89ec-a1e19fed386f"
+            },
+            "target": {
+              "cell": "c6d178b0-3537-4c61-9df0-7463da09d1bc",
+              "port": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Caché y metadatos",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51",
+                "5d2e80f2-f5c8-4509-9bfe-57252f3b751e"
+              ]
+            },
+            "labels": [
+              "Caché y metadatos"
+            ],
+            "id": "9df4c2fe-0bf0-4bba-9298-1c31db8609f1",
+            "source": {
+              "cell": "c6d178b0-3537-4c61-9df0-7463da09d1bc",
+              "port": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+            },
+            "target": {
+              "cell": "14c94b0b-fdeb-4acf-ab39-c85fd0b30bfb",
+              "port": "1e58d137-2454-4a0d-b4fe-2211428d4a74"
+            },
+            "vertices": [
+              {
+                "x": 530,
+                "y": 500
+              },
+              {
+                "x": 320,
+                "y": 540
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51",
+                "5d2e80f2-f5c8-4509-9bfe-57252f3b751e"
+              ]
+            },
+            "labels": [
+              "Respuesta"
+            ],
+            "id": "72a6e442-8c5f-4e8a-b9d7-0dd749679097",
+            "source": {
+              "cell": "14c94b0b-fdeb-4acf-ab39-c85fd0b30bfb",
+              "port": "1e58d137-2454-4a0d-b4fe-2211428d4a74"
+            },
+            "target": {
+              "cell": "c6d178b0-3537-4c61-9df0-7463da09d1bc",
+              "port": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 520
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta catálogo",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Respuesta catálogo"
+            ],
+            "id": "b123d48c-4af5-460a-9b39-d0b75da5c665",
+            "source": {
+              "cell": "c6d178b0-3537-4c61-9df0-7463da09d1bc",
+              "port": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+            },
+            "target": {
+              "cell": "583f9029-979f-47b8-b5c8-cba0ed3e2acd",
+              "port": "7b52219e-7c70-448f-89ec-a1e19fed386f"
+            },
+            "vertices": [
+              {
+                "x": 837,
+                "y": 275
               }
             ]
           },
@@ -2249,8 +2481,8 @@
           },
           {
             "position": {
-              "x": 33.75,
-              "y": 595
+              "x": 22.999999999999943,
+              "y": 575
             },
             "size": {
               "width": 120,
@@ -2373,8 +2605,8 @@
           },
           {
             "position": {
-              "x": 224.9999999999999,
-              "y": 595
+              "x": 275,
+              "y": 575
             },
             "size": {
               "width": 120,
@@ -2497,8 +2729,8 @@
           },
           {
             "position": {
-              "x": 416,
-              "y": 565
+              "x": 453,
+              "y": 575
             },
             "size": {
               "width": 120,
@@ -2621,8 +2853,8 @@
           },
           {
             "position": {
-              "x": 626,
-              "y": 565
+              "x": 743.75,
+              "y": 575
             },
             "size": {
               "width": 120,
