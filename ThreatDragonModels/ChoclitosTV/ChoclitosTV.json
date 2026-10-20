@@ -174,7 +174,9 @@
               "description": "Red interna. Acceso por VPN",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "7b037e71-a05b-43ce-99d5-1d74992da3c2"
+              ],
               "containedElements": [
                 "fbb592ac-defc-4358-9710-dbe1d4ebf964",
                 "96402bdb-cd83-42a9-8dd5-00347fda35da",
@@ -2158,8 +2160,70 @@
             },
             "vertices": [
               {
+                "x": -62.5,
+                "y": -100
+              },
+              {
                 "x": -30,
                 "y": 0
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "VPN",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "fad0da82-277d-4216-a647-e0538a344216"
+              ]
+            },
+            "labels": [
+              "VPN"
+            ],
+            "id": "7b037e71-a05b-43ce-99d5-1d74992da3c2",
+            "source": {
+              "cell": "24a1dc7c-2c0b-45ed-83ce-62f99977e52e",
+              "port": "9635f009-a81c-46e4-8b3c-158e955c6bd0"
+            },
+            "target": {
+              "cell": "fbb592ac-defc-4358-9710-dbe1d4ebf964",
+              "port": "1514d332-ce79-4e4d-b2a1-d14d316178d1"
+            },
+            "vertices": [
+              {
+                "x": 80,
+                "y": 810
+              },
+              {
+                "x": 170,
+                "y": 810
               }
             ]
           },
