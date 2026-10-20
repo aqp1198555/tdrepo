@@ -252,7 +252,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Usuarios"
+                "text": "E1 Usuarios"
               },
               "body": {
                 "stroke": "#333333",
@@ -348,7 +348,7 @@
             "id": "77f4d8d5-1128-471f-a8ab-3dfbdc3493f1",
             "data": {
               "type": "tm.Actor",
-              "name": "Usuarios",
+              "name": "E1 Usuarios",
               "description": "Visitantes, suscriptores. Usuarios de la plataforma.",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -3327,7 +3327,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Helpdesk / Customer Support Service"
+                "text": "E4 Helpdesk / Customer Support Service"
               },
               "body": {
                 "stroke": "#333333",
@@ -3423,7 +3423,7 @@
             "id": "d67b6b79-f123-416e-962c-09e2a8d7caf0",
             "data": {
               "type": "tm.Actor",
-              "name": "Helpdesk / Customer Support Service",
+              "name": "E4 Helpdesk / Customer Support Service",
               "description": "Equipo de soporte y Atención al cliente",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -4416,7 +4416,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Administradores"
+                "text": "E2 Administradores"
               },
               "body": {
                 "stroke": "#333333",
@@ -4512,7 +4512,7 @@
             "id": "24a1dc7c-2c0b-45ed-83ce-62f99977e52e",
             "data": {
               "type": "tm.Actor",
-              "name": "Administradores",
+              "name": "E2 Administradores",
               "description": "Equipo TI",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -4533,7 +4533,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Desarrolladores"
+                "text": "E3 Desarrolladores"
               },
               "body": {
                 "stroke": "#333333",
@@ -4629,7 +4629,7 @@
             "id": "089ab627-7248-4ac7-a1f6-346179e7d8e2",
             "data": {
               "type": "tm.Actor",
-              "name": "Desarrolladores",
+              "name": "E3 Desarrolladores",
               "description": "DevOps",
               "isTrustBoundary": false,
               "outOfScope": false,
