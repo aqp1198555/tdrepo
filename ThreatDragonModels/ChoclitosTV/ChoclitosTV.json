@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "44cdc5e2-536a-4eba-99fe-4e9a22fc25b7",
             "zIndex": -1,
+            "id": "44cdc5e2-536a-4eba-99fe-4e9a22fc25b7",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB1 - DMZ / Zona pública",
@@ -45,9 +45,9 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "d992ac48-2373-4fd4-9ef2-cc8a68a2af48",
-                "c9f2e8e4-259f-4027-ba68-3872ea2c570a",
                 "a7cddf35-83af-47f5-8a14-482568222e4f",
-                "ea61be04-e65c-4114-9bd9-7356d7f3fb08"
+                "ea61be04-e65c-4114-9bd9-7356d7f3fb08",
+                "5159f910-2303-4672-b1f0-7bc85e360735"
               ],
               "containedElements": [
                 "b6ec32c0-c072-46c9-bf3d-bf1895a5e402",
@@ -73,8 +73,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51",
             "zIndex": -1,
+            "id": "647fcb11-e2a9-42ee-bc0e-43f3bb3eeb51",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB2 - Capa de Aplicación / Servicios",
@@ -94,8 +94,8 @@
           },
           {
             "position": {
-              "x": 16.999999999999204,
-              "y": 494.00000000000557
+              "x": -1.25,
+              "y": 475
             },
             "size": {
               "width": 900,
@@ -108,8 +108,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "5d2e80f2-f5c8-4509-9bfe-57252f3b751e",
             "zIndex": -1,
+            "id": "5d2e80f2-f5c8-4509-9bfe-57252f3b751e",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB3 - Capa de Datos",
@@ -146,8 +146,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "fad0da82-277d-4216-a647-e0538a344216",
             "zIndex": -1,
+            "id": "fad0da82-277d-4216-a647-e0538a344216",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB4 - Capa de Administración",
@@ -178,8 +178,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "09523bf4-ea7c-42eb-9ac3-fab3f494116c",
             "zIndex": -1,
+            "id": "09523bf4-ea7c-42eb-9ac3-fab3f494116c",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB5 - Servicios Externos",
@@ -214,6 +214,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 0,
             "ports": {
               "groups": {
                 "top": {
@@ -297,7 +298,6 @@
               ]
             },
             "id": "77f4d8d5-1128-471f-a8ab-3dfbdc3493f1",
-            "zIndex": 0,
             "data": {
               "type": "tm.Actor",
               "name": "Usuarios",
@@ -331,6 +331,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -414,7 +415,6 @@
               ]
             },
             "id": "b6ec32c0-c072-46c9-bf3d-bf1895a5e402",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "P1 WAF/Firewall",
@@ -451,6 +451,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -534,7 +535,6 @@
               ]
             },
             "id": "ab0bd065-82df-4ec1-ae00-bb0cd635fa60",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "P2 HAProxy/Nginx",
@@ -571,6 +571,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -654,7 +655,6 @@
               ]
             },
             "id": "d4d9b120-ac29-46dd-a2a4-4480968121d2",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "P3 Frontend Web",
@@ -691,6 +691,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -774,7 +775,6 @@
               ]
             },
             "id": "bc385cbc-96b2-445d-b7b3-64e528729ee7",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "P4 Frontend Mobile API",
@@ -842,64 +842,6 @@
               {
                 "x": 153.75,
                 "y": 210
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Credenciales",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "44cdc5e2-536a-4eba-99fe-4e9a22fc25b7"
-              ]
-            },
-            "labels": [
-              "Credenciales"
-            ],
-            "id": "c9f2e8e4-259f-4027-ba68-3872ea2c570a",
-            "source": {
-              "cell": "77f4d8d5-1128-471f-a8ab-3dfbdc3493f1",
-              "port": "9635f009-a81c-46e4-8b3c-158e955c6bd0"
-            },
-            "target": {
-              "cell": "b6ec32c0-c072-46c9-bf3d-bf1895a5e402",
-              "port": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
-            },
-            "vertices": [
-              {
-                "x": 260,
-                "y": -280
-              },
-              {
-                "x": 290,
-                "y": -235
               }
             ]
           },
@@ -1535,6 +1477,60 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Credenciales / Petición catálogo-play / medio de pago",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "44cdc5e2-536a-4eba-99fe-4e9a22fc25b7"
+              ]
+            },
+            "labels": [
+              "Credenciales / Petición catálogo-play / medio de pago"
+            ],
+            "id": "5159f910-2303-4672-b1f0-7bc85e360735",
+            "source": {
+              "cell": "77f4d8d5-1128-471f-a8ab-3dfbdc3493f1",
+              "port": "56910bb8-a16d-4f5d-9d80-356779baf217"
+            },
+            "target": {
+              "cell": "b6ec32c0-c072-46c9-bf3d-bf1895a5e402",
+              "port": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
+            },
+            "vertices": [
+              {
+                "x": 50,
+                "y": -310
+              }
+            ]
+          },
+          {
             "position": {
               "x": 381.25,
               "y": 230.00000000000023
@@ -1555,6 +1551,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1638,7 +1635,6 @@
               ]
             },
             "id": "583f9029-979f-47b8-b5c8-cba0ed3e2acd",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "P7 API Gateway",
@@ -1675,6 +1671,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1758,7 +1755,6 @@
               ]
             },
             "id": "35bae4d0-7dd8-42d3-997b-b22f3cc0f037",
-            "zIndex": 12,
             "data": {
               "type": "tm.Process",
               "name": "P8 Auth Service",
@@ -1795,6 +1791,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1878,7 +1875,6 @@
               ]
             },
             "id": "e893d6f5-1687-4986-819f-8547de668449",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "P10 Streaming Service",
@@ -1915,6 +1911,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1998,7 +1995,6 @@
               ]
             },
             "id": "26290085-391f-448d-83d1-baf4fcda61d0",
-            "zIndex": 15,
             "data": {
               "type": "tm.Process",
               "name": "P11 Subscription Service",
@@ -2035,6 +2031,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -2118,7 +2115,6 @@
               ]
             },
             "id": "c6d178b0-3537-4c61-9df0-7463da09d1bc",
-            "zIndex": 16,
             "data": {
               "type": "tm.Process",
               "name": "P12 Catalog Service",
@@ -2155,6 +2151,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -2238,7 +2235,6 @@
               ]
             },
             "id": "d67b6b79-f123-416e-962c-09e2a8d7caf0",
-            "zIndex": 17,
             "data": {
               "type": "tm.Actor",
               "name": "Helpdesk / Customer Support Service",
@@ -2275,6 +2271,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 18,
             "ports": {
               "groups": {
                 "top": {
@@ -2358,7 +2355,6 @@
               ]
             },
             "id": "cea63e22-2278-4206-abd7-e3fdfb28130e",
-            "zIndex": 18,
             "data": {
               "type": "tm.Store",
               "name": "D1 PostgreSQL",
@@ -2399,6 +2395,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 19,
             "ports": {
               "groups": {
                 "top": {
@@ -2496,8 +2493,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 19
+            }
           },
           {
             "position": {
@@ -2523,6 +2519,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 20,
             "ports": {
               "groups": {
                 "top": {
@@ -2620,8 +2617,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 20
+            }
           },
           {
             "position": {
@@ -2647,6 +2643,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 21,
             "ports": {
               "groups": {
                 "top": {
@@ -2744,8 +2741,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 21
+            }
           },
           {
             "position": {
@@ -2768,6 +2764,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 22,
             "ports": {
               "groups": {
                 "top": {
@@ -2851,7 +2848,6 @@
               ]
             },
             "id": "e8080544-1938-4310-b775-f4704ef8531d",
-            "zIndex": 22,
             "data": {
               "type": "tm.Process",
               "name": "P5 Pasarela de pagos",
@@ -2888,6 +2884,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 24,
             "ports": {
               "groups": {
                 "top": {
@@ -2984,8 +2981,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 24
+            }
           },
           {
             "position": {
@@ -3008,6 +3004,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 25,
             "ports": {
               "groups": {
                 "top": {
@@ -3104,8 +3101,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 25
+            }
           },
           {
             "position": {
@@ -3128,6 +3124,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 26,
             "ports": {
               "groups": {
                 "top": {
@@ -3224,8 +3221,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 26
+            }
           },
           {
             "position": {
@@ -3248,6 +3244,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 27,
             "ports": {
               "groups": {
                 "top": {
@@ -3344,8 +3341,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 27
+            }
           },
           {
             "position": {
@@ -3368,6 +3364,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 28,
             "ports": {
               "groups": {
                 "top": {
@@ -3451,7 +3448,6 @@
               ]
             },
             "id": "24a1dc7c-2c0b-45ed-83ce-62f99977e52e",
-            "zIndex": 28,
             "data": {
               "type": "tm.Actor",
               "name": "Administradores",
@@ -3485,6 +3481,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 29,
             "ports": {
               "groups": {
                 "top": {
@@ -3578,8 +3575,7 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 29
+            }
           },
           {
             "position": {
@@ -3602,6 +3598,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 30,
             "ports": {
               "groups": {
                 "top": {
@@ -3695,8 +3692,7 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 30
+            }
           },
           {
             "position": {
@@ -3719,6 +3715,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 31,
             "ports": {
               "groups": {
                 "top": {
@@ -3815,8 +3812,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 31
+            }
           }
         ],
         "description": "DFD Choclitos TV"
