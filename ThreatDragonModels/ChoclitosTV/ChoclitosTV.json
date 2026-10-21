@@ -4227,13 +4227,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -5145,8 +5138,8 @@
                   "status": "Mitigated",
                   "severity": "High",
                   "type": "Repudiation / Repudiación",
-                  "description": "Auditoría y trazabilidad completa.",
-                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "description": "Negación de acciones administrativas.",
+                  "mitigation": "Auditoría y trazabilidad completa.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 14,
@@ -5155,7 +5148,7 @@
               ],
               "threatFrequency": {
                 "spoofing": 2,
-                "repudiation": 1
+                "repudiation": 2
               }
             }
           },
@@ -5173,8 +5166,8 @@
                 "text": "E3 Desarrolladores"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -5271,9 +5264,40 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "ba4b5e57-b5c4-402d-821e-e51f4cbb2ddf",
+                  "title": "Robo de credenciales",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Acceso no autorizado a CI/CD",
+                  "mitigation": "ZTNA + MFA + rotación de claves. Acceso por usuario y aplicación. Firma de commits.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 57,
+                  "score": "20"
+                },
+                {
+                  "id": "ba756925-66bd-43c2-bf4d-4836cf25dab1",
+                  "title": "Repudio",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Auditoría de despliegues y cambios.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 58,
+                  "score": "12"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -5780,6 +5804,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 56
+    "threatTop": 58
   }
 }
