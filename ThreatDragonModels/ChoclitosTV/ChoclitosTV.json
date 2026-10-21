@@ -5814,8 +5814,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "90172441-3b52-4ccc-bf83-b14c0c6b345a",
             "zIndex": 34,
+            "id": "90172441-3b52-4ccc-bf83-b14c0c6b345a",
             "data": {
               "type": "tm.Text",
               "name": "Descriptive text",
