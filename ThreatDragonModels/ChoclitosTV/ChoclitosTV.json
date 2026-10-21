@@ -390,8 +390,8 @@
                 "text": "P1 WAF/Firewall"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -488,12 +488,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "ab4f3c61-c83e-4aef-b60a-7e007b230ab1",
+                  "title": "DDoS",
+                  "status": "Accepted",
+                  "severity": "Medium",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Ataques de DDoS.",
+                  "mitigation": "Protección DDoS, rate limiting.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": "9"
+                },
+                {
+                  "id": "4ad4816a-e7ab-4845-b610-528b0ccb4be0",
+                  "title": "Bypass",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering / Manipulación",
+                  "description": "Intento de bypass del WAF",
+                  "mitigation": "Parches de seguridad, reglas estrictas y bien definidas OWASP Core Rule Set",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": "9"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 2,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 2,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -613,7 +648,49 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "e7fdff10-a3aa-488c-93c1-1a4207ca2904",
+                  "title": "Falsificación de cabeceras",
+                  "status": "Transferred",
+                  "severity": "Medium",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Falsificación de cabeceras",
+                  "mitigation": "Validación estricta.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": "6"
+                },
+                {
+                  "id": "b19cc7d7-41e7-48fe-b173-83427bbb3439",
+                  "title": "Enumeración",
+                  "status": "Transferred",
+                  "severity": "Medium",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Exposición de rutas internas",
+                  "mitigation": "Reverse proxy con rutas públicas estrictas.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": "9"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -630,8 +707,8 @@
                 "text": "P3 Frontend Web/ Mobile"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -728,12 +805,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "0f16398d-f52b-436c-9019-cad72e8f2561",
+                  "title": "Manipulación de datos",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering / Manipulación",
+                  "description": "Manipulación de parámetros en el cliente.",
+                  "mitigation": "Validación en backend.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": "9"
+                },
+                {
+                  "id": "8f442f59-2aa0-458f-97a4-f51eaed09e68",
+                  "title": "Exposición",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Exposición de datos sensibles.",
+                  "mitigation": "DTO (Data Transfer Object) mínimos.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2868,8 +2980,8 @@
                 "text": "P4 API Gateway"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2966,12 +3078,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "3446e7ee-afb1-434a-8a26-307c4fcf8c90",
+                  "title": "Manipulación",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Manipulación de rutas, payloads",
+                  "mitigation": "Schema validation.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": "12"
+                },
+                {
+                  "id": "86430beb-cf3d-4fed-ae61-ec3f3cbd0f75",
+                  "title": "Exposición",
+                  "status": "Transferred",
+                  "severity": "Medium",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Exposición de APIs internas.",
+                  "mitigation": "Segmentación de rutas. Firewall interno.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": "12"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -3456,7 +3603,7 @@
                   "severity": "High",
                   "type": "Spoofing / Spoofing",
                   "description": "Suplantación del agente de soporte por robo de credenciales.",
-                  "mitigation": "MFA obligatorio, sesiones firmadas, RBAC estricto.",
+                  "mitigation": "MFA obligatorio, sesiones firmadas, roles estrictos en el backend.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 6,
@@ -3477,7 +3624,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 1
               }
             }
@@ -4600,13 +4747,6 @@
                 "spoofing": 1,
                 "repudiation": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -5099,6 +5239,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 14
+    "threatTop": 22
   }
 }
