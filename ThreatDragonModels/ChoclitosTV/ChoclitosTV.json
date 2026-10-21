@@ -355,7 +355,25 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "5d9f7b48-7b6b-4991-95ad-acb64b29030c",
+                  "title": "Suplantación",
+                  "status": "Accepted",
+                  "severity": "Medium",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Suplantación del usuario mediante robo de sesión/JWT",
+                  "mitigation": "Expiración corta de cookies, rotación de claves JWT, comprobación de dispositivos.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": "9"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -3330,8 +3348,8 @@
                 "text": "E4 Helpdesk / Customer Support Service"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3428,9 +3446,40 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "779dfb2d-c200-4b87-a13a-fded033ee904",
+                  "title": "Suplantación",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Suplantación del agente de soporte por robo de credenciales.",
+                  "mitigation": "MFA obligatorio, sesiones firmadas, RBAC estricto.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": "16"
+                },
+                {
+                  "id": "244a61bb-7b94-4539-9451-99f80465d6d5",
+                  "title": "Negación de acciones realizadas",
+                  "status": "Accepted",
+                  "severity": "Low",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Negación de acciones realizadas sobre cuentas de usuarios.",
+                  "mitigation": "Auditoría",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": "6"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -4419,8 +4468,8 @@
                 "text": "E2 Administradores"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -4517,9 +4566,47 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "1297ac7f-937d-4499-bc0b-1bfce4551aab",
+                  "title": "Suplantación",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Suplantación por robo de credenciales internas.",
+                  "mitigation": "ZTNA + MFA + rotación de claves. Acceso por usuario y aplicación.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": "20"
+                },
+                {
+                  "id": "a8deee0a-a4cb-4c43-82a8-f237914618d3",
+                  "title": "Negación de acciones",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Auditoría y trazabilidad completa.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": "12"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -4907,6 +4994,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 33,
             "ports": {
               "groups": {
                 "top": {
@@ -5003,8 +5091,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 33
+            }
           }
         ],
         "description": "DFD Choclitos TV"
@@ -5012,6 +5099,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 14
   }
 }
