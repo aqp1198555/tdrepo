@@ -829,6 +829,19 @@
                   "new": false,
                   "number": 22,
                   "score": ""
+                },
+                {
+                  "id": "b1ebd8d9-b7c2-4001-b7aa-2d22c448268e",
+                  "title": "Elevación de privilegios soporte",
+                  "status": "Transferred",
+                  "severity": "High",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "Elevación de privilegios del técnico de soporte (o la persona que le suplante) para adquirir el rol de un técnico de mayor nivel.",
+                  "mitigation": "Aplicación del principio del mínimo privilegio, monitorización y alertas.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": "12"
                 }
               ],
               "threatFrequency": {
@@ -837,7 +850,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 1,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 0
+                "elevationOfPrivilege": 1
               }
             }
           },
@@ -1086,6 +1099,10 @@
             },
             "vertices": [
               {
+                "x": 160,
+                "y": 290
+              },
+              {
                 "x": 90,
                 "y": 310
               }
@@ -1137,6 +1154,10 @@
               "port": "d7cb5b49-c169-46b2-8e67-ed7c44dcccae"
             },
             "vertices": [
+              {
+                "x": 210,
+                "y": 300
+              },
               {
                 "x": 180,
                 "y": 320
@@ -3102,11 +3123,24 @@
                   "new": false,
                   "number": 20,
                   "score": "12"
+                },
+                {
+                  "id": "6b70426f-7756-4147-9e51-b3ee01d05c4a",
+                  "title": "DoS",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": " Saturación del gateway.",
+                  "mitigation": "Rate limiting + circuit breakers.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 1,
-                "tampering": 0,
+                "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 1,
                 "denialOfService": 0,
@@ -3128,8 +3162,8 @@
                 "text": "P5 Auth Service"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3226,12 +3260,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "8447227d-9626-4156-a4fe-ab0854b0c873",
+                  "title": "Tokens falsificados.",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Intento de sesión mediante falsificación de tokens.",
+                  "mitigation": "Rotación de claves de firma.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": "9"
+                },
+                {
+                  "id": "bff88862-55b1-4ec9-b84b-fb61cb02f297",
+                  "title": "Ataques por fuerza bruta",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Interrupción del servicio por intentos de login mediante ataques de fuerza bruta",
+                  "mitigation": "Limitación de intentos.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -3248,8 +3317,8 @@
                 "text": "P8 Subscription Service"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3346,12 +3415,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "3f82c235-6174-44d8-a767-68468e9681c6",
+                  "title": "Estado de suscripción",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering / Manipulación",
+                  "description": "Manipulación del estado de suscripción.",
+                  "mitigation": "Auditoría.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": "6"
+                },
+                {
+                  "id": "2e8e39f6-6ef8-4c5c-a9b9-45c625a6d21a",
+                  "title": "Exposición de datos de pago.",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Exposición de los datos de pago de los suscriptores.",
+                  "mitigation": "Uso de protocolos seguros. Tráfico cifrado. Exposición de datos mínimamente imprescindibles.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 32,
+                  "score": "20"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -4873,8 +4977,8 @@
                 "text": "P6 User Service"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -4971,12 +5075,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "173e567e-eb6e-41c9-9ff0-b2732846a996",
+                  "title": "Exfiltración de datos",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Fuga de datos personales.",
+                  "mitigation": "Minimizar campos expuestos.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": "9"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             },
             "children": [
               "02061351-4cb7-42d2-b981-bb17343e766f"
@@ -5120,8 +5246,8 @@
                 "text": "P8 Streaming Service"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -5218,12 +5344,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "1755718d-aff1-495d-9cd8-26303ec1addf",
+                  "title": "Dos",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Saturación de peticiones.",
+                  "mitigation": "Rate limiting.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": "9"
+                },
+                {
+                  "id": "dd23acb0-99c4-46d8-98dd-8c1a44371511",
+                  "title": "Acceso a contenido",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "Acceso a contenido restringido",
+                  "mitigation": "Validación de permisos en cada play.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": "4"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             }
           }
         ],
@@ -5232,6 +5393,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 22
+    "threatTop": 32
   }
 }
