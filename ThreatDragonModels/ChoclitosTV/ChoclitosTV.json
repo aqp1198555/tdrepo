@@ -5797,6 +5797,30 @@
                 "elevationOfPrivilege": 1
               }
             }
+          },
+          {
+            "position": {
+              "x": -560,
+              "y": 1140
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Descriptive text"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "90172441-3b52-4ccc-bf83-b14c0c6b345a",
+            "zIndex": 34,
+            "data": {
+              "type": "tm.Text",
+              "name": "Descriptive text",
+              "hasOpenThreats": false
+            }
           }
         ],
         "description": "DFD Choclitos TV"
