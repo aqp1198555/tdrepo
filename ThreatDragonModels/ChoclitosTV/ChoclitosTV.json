@@ -4352,8 +4352,8 @@
                 "text": "P10 Consola de Administración"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -4450,12 +4450,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "1a35b386-1c37-4f27-b931-3a11cd1a4e01",
+                  "title": "Suplantación de admin",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Suplantación del personal de administración TI.",
+                  "mitigation": "Acceso por ZTNA por usuario, aplicación y según contexto. Autenticación MFA. Monitorización y auditoría de accesos.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 33,
+                  "score": "20"
+                },
+                {
+                  "id": "2e8b8cf2-f86d-4476-9f99-f68d0f98f357",
+                  "title": "Escalada de privilegios",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "Escalada de personal de administración / TI a roles de niveles superiores.",
+                  "mitigation": "RBAC estricto. Mínimo privilegio.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 34,
+                  "score": "15"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -4472,8 +4507,8 @@
                 "text": "P11 Monitorización y logs"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -4570,12 +4605,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "dfe7af1a-c8e1-418f-8258-9120995a6c92",
+                  "title": "Acceso a datos sensibles",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Acceso a logs con información privilegiada",
+                  "mitigation": "Cifrado, mínimo privilegio, control de acceso.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 35,
+                  "score": "16"
+                },
+                {
+                  "id": "38016069-f639-4170-858a-73f4b75a099d",
+                  "title": "Alteración de registros",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering / Manipulación",
+                  "description": "Manipulación de logs.",
+                  "mitigation": "Logs inmutables (WORM: Write Once Read Many).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 36,
+                  "score": "16"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -4696,6 +4766,13 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -4815,7 +4892,7 @@
               "threats": [
                 {
                   "id": "1297ac7f-937d-4499-bc0b-1bfce4551aab",
-                  "title": "Suplantación",
+                  "title": "Robo de credenciales.",
                   "status": "Open",
                   "severity": "Critical",
                   "type": "Spoofing / Spoofing",
@@ -4841,7 +4918,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 1
               }
             }
@@ -5393,6 +5470,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 32
+    "threatTop": 36
   }
 }
