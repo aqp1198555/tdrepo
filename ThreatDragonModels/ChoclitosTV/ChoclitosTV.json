@@ -4662,8 +4662,8 @@
                 "text": "P12 CI /CD"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -4760,19 +4760,73 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
+              "threats": [
+                {
+                  "id": "6233aa51-553d-4e6f-992a-f6ac07ad0123",
+                  "title": "Suplantación",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Suplantación de desarrolladores",
+                  "mitigation": "Acceso por ZTNA por usuario, aplicación y según contexto. Autenticación MFA. Monitorización y auditoría de accesos. Firma de commits",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 37,
+                  "score": "20"
+                },
+                {
+                  "id": "218ac7e6-fc7e-4735-911c-7881d8d52b8b",
+                  "title": "Manipulación de pipelines",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering / Manipulación",
+                  "description": "Manipulación de pipelines.",
+                  "mitigation": "GitOps. Todo cambio pasa por Pull Requests.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 38,
+                  "score": "20"
+                },
+                {
+                  "id": "39c50c4a-842b-409d-9674-8a0039bbae14",
+                  "title": "Despliegues no autorizados",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "Despliegues de software no autorizados.",
+                  "mitigation": "RBAC estricto. Mínimo privilegio.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 39,
+                  "score": "15"
+                },
+                {
+                  "id": "4c880072-835c-472b-94fe-f79c1fe07616",
+                  "title": "Ramsonware",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Cifrado de artefactos o pipelines.",
+                  "mitigation": "Backups inmutables + control de acceso.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 40,
+                  "score": "20"
+                }
               ],
-              "name": null
+              "threatFrequency": {
+                "spoofing": 2,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -5470,6 +5524,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 36
+    "threatTop": 40
   }
 }
