@@ -3740,11 +3740,13 @@
                 "text": "D2 Redis"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3841,18 +3843,64 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "b5f5076b-1efc-4bc3-849a-d9534db63b62",
+                  "title": "Tokens / claves",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering / Manipulación",
+                  "description": "Manipulación de claves críticas.",
+                  "mitigation": "Namespaces + ACLs.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 48,
+                  "score": "8"
+                },
+                {
+                  "id": "5821fb96-c66e-457a-bf31-269d6dee44b9",
+                  "title": "Trazabilidad",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Cambios sin trazabilidad.",
+                  "mitigation": "Logs de acceso.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 49,
+                  "score": "8"
+                },
+                {
+                  "id": "5bb16553-daa1-44ba-b4a0-d38fa42b50ab",
+                  "title": "Exposición de sesiones",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Exposición de sesiones/tokens.",
+                  "mitigation": "TTL corto",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 51,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
             "position": {
-              "x": 355,
+              "x": 352,
               "y": 565
             },
             "size": {
@@ -3864,11 +3912,13 @@
                 "text": "D3 MinIO / S3"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3965,13 +4015,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "b2e09018-3f13-4d9f-954e-c43f79b6613f",
+                  "title": "Saturación de peticiones",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Saturación de peticiones.",
+                  "mitigation": "Rate limiting.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 52,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 2
+              }
             }
           },
           {
@@ -3988,11 +4058,13 @@
                 "text": "D4 Backup Server"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -4089,13 +4161,79 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "d01b39cb-b42a-431b-ba4d-0368033d972b",
+                  "title": "Manipulación de copias",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering / Manipulación",
+                  "description": "Manipulación de copias de seguridad.",
+                  "mitigation": "Backups inmutables",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 53,
+                  "score": "10"
+                },
+                {
+                  "id": "87c9e8ee-8141-41a4-ab9b-89fc90f1dc70",
+                  "title": "Trazabilidad",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Restauraciones sin trazabilidad",
+                  "mitigation": "Auditoría.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 54,
+                  "score": "9"
+                },
+                {
+                  "id": "a85ac5bb-dbe1-4771-9cd7-d98f759961d0",
+                  "title": "Exposición de datos",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Exposición de datos sensibles",
+                  "mitigation": "Cifrado.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 55,
+                  "score": "8"
+                },
+                {
+                  "id": "e9888344-8f0b-4156-9a33-de9716de6f27",
+                  "title": "Ramsonware",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Ramsonware",
+                  "mitigation": "Copias offline + almacenamiento WORM.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 56,
+                  "score": "20"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -4112,8 +4250,8 @@
                 "text": "P13 Pasarela de pagos"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -4210,12 +4348,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "493aee97-6c6f-4f5e-94d1-6c736cf19fdb",
+                  "title": "Manipulación de transacciones",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Manipulación de transacciones",
+                  "mitigation": "Auditoría",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 41,
+                  "score": "4"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -4232,8 +4392,8 @@
                 "text": "P14 CDN de Contenidos"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -4330,12 +4490,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "8c5e65f0-8d4d-48aa-a5d9-5fbb6791a5fc",
+                  "title": "DoS",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Saturación de ancho de banda.",
+                  "mitigation": "Protección DDoS del proveedor.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 42,
+                  "score": "12"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -5253,11 +5435,13 @@
                 "text": "D1 PostgreSQL"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -5354,13 +5538,85 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "b9198398-f7f0-4c36-a2e9-38a1a44db0db",
+                  "title": "Manipulación de datos",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "Manipulación de datos persistentes.",
+                  "mitigation": "RBAC + integridad referencial.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 43,
+                  "score": "16"
+                },
+                {
+                  "id": "26a64fa1-7e7a-44d7-aac5-e0b0e3ccc807",
+                  "title": "Falta de trazabilidad",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Cambios sin trazabilidad.",
+                  "mitigation": "Auditoría de cambios.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 44,
+                  "score": "10"
+                },
+                {
+                  "id": "a572ffed-1a52-45bc-8910-80956bd75aef",
+                  "title": "Exfiltración / acceso indebido",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Exposición de datos sensibles.",
+                  "mitigation": "Cifrado en reposo.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 45,
+                  "score": "20"
+                },
+                {
+                  "id": "9ff465d2-3297-48a9-845f-9dbe894779b9",
+                  "title": "DoS",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Saturación de consultas.",
+                  "mitigation": "Índices + caché en Redis.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 46,
+                  "score": "6"
+                },
+                {
+                  "id": "612f6df3-2fc5-4d9d-9ef8-ca8486758c79",
+                  "title": "Ransomware",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Ransomware",
+                  "mitigation": "Backups offline + snapshots inmutables.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 47,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 2
+              }
             }
           },
           {
@@ -5524,6 +5780,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 40
+    "threatTop": 56
   }
 }
