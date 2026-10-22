@@ -5,7 +5,7 @@
   "summary": {
     "title": "ChoclitosTV",
     "owner": "Arturo Quiza Pascual",
-    "description": "Diagrama de flujo de datos (DFD) para la infraestructura de red de Choclitos TV",
+    "description": "Plataforma de Streaming VOD",
     "id": 0
   },
   "detail": {
@@ -13,7 +13,7 @@
     "diagrams": [
       {
         "id": 0,
-        "title": "Nuevo diagrama STRIDE",
+        "title": "DFD Choclitos TV",
         "diagramType": "STRIDE",
         "placeholder": "Descripción de nuevo diagrama STRIDE",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -5799,7 +5799,7 @@
             }
           }
         ],
-        "description": "DFD Choclitos TV"
+        "description": "Diagrama de flujo de datos (DFD) para la infraestructura de red de Choclitos TV"
       }
     ],
     "diagramTop": 1,
