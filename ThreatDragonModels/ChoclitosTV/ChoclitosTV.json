@@ -821,14 +821,14 @@
                   "id": "8f442f59-2aa0-458f-97a4-f51eaed09e68",
                   "title": "Exposición",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Medium",
                   "type": "Information disclosure / Brecha de información",
                   "description": "Exposición de datos sensibles.",
                   "mitigation": "DTO (Data Transfer Object) mínimos.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 22,
-                  "score": ""
+                  "score": "8"
                 },
                 {
                   "id": "b1ebd8d9-b7c2-4001-b7aa-2d22c448268e",
@@ -848,7 +848,7 @@
                 "spoofing": 0,
                 "tampering": 1,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 1
               }
@@ -3128,14 +3128,14 @@
                   "id": "6b70426f-7756-4147-9e51-b3ee01d05c4a",
                   "title": "DoS",
                   "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering / Manipulación",
+                  "severity": "Medium",
+                  "type": "Denial of service / Denegación de servicio",
                   "description": " Saturación del gateway.",
                   "mitigation": "Rate limiting + circuit breakers.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 24,
-                  "score": ""
+                  "score": "8"
                 }
               ],
               "threatFrequency": {
@@ -3143,7 +3143,7 @@
                 "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 1,
-                "denialOfService": 0,
+                "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
             }
@@ -3283,14 +3283,14 @@
                   "id": "bff88862-55b1-4ec9-b84b-fb61cb02f297",
                   "title": "Ataques por fuerza bruta",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Low",
                   "type": "Denial of service / Denegación de servicio",
                   "description": "Interrupción del servicio por intentos de login mediante ataques de fuerza bruta",
                   "mitigation": "Limitación de intentos.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 26,
-                  "score": ""
+                  "score": "5"
                 }
               ],
               "threatFrequency": {
@@ -3298,7 +3298,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 1,
+                "denialOfService": 2,
                 "elevationOfPrivilege": 0
               }
             }
@@ -4232,7 +4232,7 @@
           {
             "position": {
               "x": 472,
-              "y": 1.9999999999994316
+              "y": 10.000000000000014
             },
             "size": {
               "width": 120,
@@ -4515,8 +4515,8 @@
           },
           {
             "position": {
-              "x": 124.99999999999989,
-              "y": 717.0000000000019
+              "x": 120,
+              "y": 715
             },
             "size": {
               "width": 90,
@@ -5002,6 +5002,13 @@
                 "denialOfService": 1,
                 "elevationOfPrivilege": 1
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
