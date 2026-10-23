@@ -13,7 +13,7 @@
     "diagrams": [
       {
         "id": 0,
-        "title": "DFD Choclitos TV",
+        "title": "Choclitos TV",
         "diagramType": "STRIDE",
         "placeholder": "Descripción de nuevo diagrama STRIDE",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -5878,7 +5878,7 @@
             }
           }
         ],
-        "description": "Diagrama de flujo de datos (DFD) para la infraestructura de red de Choclitos TV"
+        "description": "Modelado de amenazas STRIDE para la infraestructura de red de Choclitos TV"
       }
     ],
     "diagramTop": 1,
