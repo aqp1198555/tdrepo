@@ -842,16 +842,49 @@
                   "new": false,
                   "number": 23,
                   "score": "12"
+                },
+                {
+                  "id": "22ec4771-e3c6-45c3-b356-a8b11a02b2d9",
+                  "title": "Vulnerabilidad en node.js",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "Ejecución de código mediante el decodificador Brotli.",
+                  "mitigation": "Actualización de versiones.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 61,
+                  "score": "16"
+                },
+                {
+                  "id": "982c9d15-a469-423e-9053-4e60adf7ada4",
+                  "title": "Falsificación de certificados",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Tampering / Manipulación",
+                  "description": "Compromiso de claves privadas de certificados intermedios de eMudhra",
+                  "mitigation": "Parcheado de versiones.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 63,
+                  "score": "20"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 2,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -3304,6 +3337,19 @@
                   "new": false,
                   "number": 26,
                   "score": "5"
+                },
+                {
+                  "id": "6f007693-4b49-42f9-9879-822fca583903",
+                  "title": "Vulnerabilidades PHP",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "Ejecución remota de código.",
+                  "mitigation": "Parcheado de seguridad.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 62,
+                  "score": "20"
                 }
               ],
               "threatFrequency": {
@@ -3312,7 +3358,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 2,
-                "elevationOfPrivilege": 0
+                "elevationOfPrivilege": 1
               }
             }
           },
@@ -5005,6 +5051,19 @@
                   "new": false,
                   "number": 40,
                   "score": "20"
+                },
+                {
+                  "id": "97d30639-3043-4387-8fe7-03356579827d",
+                  "title": "Desbordamiento de enteros (integer overflow) en GitLab",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "Un usuario no autenticado ejecutar código arbitrario en el servidor debido a un desbordamiento de enteros (integer overflow) durante la compilación de una expresión regular especialmente diseñada.",
+                  "mitigation": "Actualiazción de versiones ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 60,
+                  "score": "20"
                 }
               ],
               "threatFrequency": {
@@ -5013,7 +5072,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 1,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
             }
           },
@@ -5817,6 +5876,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 59
+    "threatTop": 63
   }
 }
