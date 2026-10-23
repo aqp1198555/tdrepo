@@ -1099,11 +1099,11 @@
             },
             "vertices": [
               {
-                "x": 160,
+                "x": 170,
                 "y": 290
               },
               {
-                "x": 90,
+                "x": 100,
                 "y": 310
               }
             ]
@@ -1415,7 +1415,7 @@
             },
             "vertices": [
               {
-                "x": 50,
+                "x": 60,
                 "y": 540
               }
             ]
@@ -2755,7 +2755,7 @@
             },
             "vertices": [
               {
-                "x": 310,
+                "x": 320,
                 "y": 620
               }
             ]
@@ -3100,12 +3100,12 @@
               "threats": [
                 {
                   "id": "3446e7ee-afb1-434a-8a26-307c4fcf8c90",
-                  "title": "Manipulación",
+                  "title": "Manipulación de payloads",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing / Spoofing",
-                  "description": "Manipulación de rutas, payloads",
-                  "mitigation": "Schema validation.",
+                  "description": "JSON malicioso altera rutas o lógica interna. Node.js",
+                  "mitigation": "Validación de esquemas, rechazo de campos inesperados.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 19,
@@ -3136,21 +3136,34 @@
                   "new": false,
                   "number": 24,
                   "score": "8"
+                },
+                {
+                  "id": "164fb707-8b16-428d-93f4-1b0d58593080",
+                  "title": "Broken Object Level Authorization",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "El gateway permite acceder a recursos de otros usuarios por validación insuficiente de IDs.",
+                  "mitigation": "Autorización centralizada, validación estricta de permisos.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 59,
+                  "score": "16"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 1,
                 "denialOfService": 1,
-                "elevationOfPrivilege": 0
+                "elevationOfPrivilege": 1
               }
             }
           },
           {
             "position": {
-              "x": -67,
+              "x": -51.25,
               "y": 345
             },
             "size": {
@@ -3867,7 +3880,7 @@
                   "id": "5821fb96-c66e-457a-bf31-269d6dee44b9",
                   "title": "Trazabilidad",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Medium",
                   "type": "Repudiation / Repudiación",
                   "description": "Cambios sin trazabilidad.",
                   "mitigation": "Logs de acceso.",
@@ -3880,7 +3893,7 @@
                   "id": "5bb16553-daa1-44ba-b4a0-d38fa42b50ab",
                   "title": "Exposición de sesiones",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Medium",
                   "type": "Information disclosure / Brecha de información",
                   "description": "Exposición de sesiones/tokens.",
                   "mitigation": "TTL corto",
@@ -3892,8 +3905,8 @@
               ],
               "threatFrequency": {
                 "tampering": 1,
-                "repudiation": 1,
-                "informationDisclosure": 1,
+                "repudiation": 2,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             }
@@ -5002,13 +5015,6 @@
                 "denialOfService": 1,
                 "elevationOfPrivilege": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -5580,7 +5586,7 @@
                   "id": "b9198398-f7f0-4c36-a2e9-38a1a44db0db",
                   "title": "Manipulación de datos",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Tampering / Manipulación",
                   "description": "Manipulación de datos persistentes.",
                   "mitigation": "RBAC + integridad referencial.",
@@ -5632,21 +5638,21 @@
                   "id": "612f6df3-2fc5-4d9d-9ef8-ca8486758c79",
                   "title": "Ransomware",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Critical",
                   "type": "Denial of service / Denegación de servicio",
                   "description": "Ransomware",
                   "mitigation": "Backups offline + snapshots inmutables.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 47,
-                  "score": ""
+                  "score": "20"
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 1,
                 "informationDisclosure": 1,
-                "denialOfService": 2
+                "denialOfService": 3
               }
             }
           },
@@ -5811,6 +5817,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 58
+    "threatTop": 59
   }
 }
